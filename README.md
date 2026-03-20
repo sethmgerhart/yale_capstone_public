@@ -2,7 +2,7 @@
 
 <span style='font-size:small'>_Note: This README contains this assignment's highlights. You may find the final report, which contains more comprehensive details and supporting figures, at the following location:_</span>
 
-- <span style='font-size:small'>`capstone/A_data/E_outputs/Final_Report.ipynb`</span>
+- <span style='font-size:small'>`E_outputs/Final_Report.ipynb`</span>
 
 ## Project Question
 
