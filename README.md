@@ -16,7 +16,7 @@ Because a portion of the monitoring network appears persistently located in low 
 
 ## Data Collection
 
-<span style='font-size:small'>_Note: The raw data and some processed data were too large to provide in the GitHub repository. Please see the the links and descriptions below to access the raw data for replication purposes. I flag all datasets that are not uploaded to GitHub due to size restrictions._</span>
+<span style='font-size:small'>_Note: The raw data and some processed data were too large to provide in the GitHub repository. Please see the the links and descriptions below to access the raw data for replication purposes. I flag all datasets that were not uploaded to GitHub due to size restrictions._</span>
 
 Summary-level information about the raw data:
 
@@ -27,18 +27,18 @@ Summary-level information about the raw data:
 
 This analysis used the following raw data:
 
-- **Title:** _daily\_88101\_2019.csv_
+- **Title:** _daily\_88101\_2019.csv_ <span style='color:#9c27b0'>\(not uploaded\)</span>
   - **Description:** Derived from the U.S. EPA Pre\-Generated Data Files webpage on 10/28/2025, this dataset contains the PM2.5 air monitor data for every day in the year 2019 for all monitors in the United States and its territories.
   - **Data Dictionary:** [https://www.epa.gov/aqs/aqs\-data\-dictionary](https://www.epa.gov/aqs/aqs-data-dictionary) 
   - **Source Link:** [https://aqs.epa.gov/aqsweb/airdata/download\_files.html\#Daily](https://aqs.epa.gov/aqsweb/airdata/download_files.html#Daily) \(see "Particulates" and "2019"\)
-- **Title:** _USHAP\_PM2.5\_D1K\_2019\_V1.zip_
+- **Title:** _USHAP\_PM2.5\_D1K\_2019\_V1.zip_ <span style='color:#9c27b0'>\(not uploaded\)</span>
   - **Description:** Derived from research out of the Universities of Maryland and Iowa on 11/03/2025, this dataset contains 1\-kilometer resolution PM2.5 estimates in the contiguous United States for every day in the year 2019. The dataset was generated from big data \(e.g., ground\-based measurements, satellite remote sensing products, atmospheric reanalysis, and model simulations\) using artificial intelligence. The researchers show their estimates align well with physical measurements, with 0.82 cross\-validated coefficients of determination.
   - **Paper:** [https://www.thelancet.com/journals/lanplh/article/PIIS2542\-5196\(23\)00235\-8/fulltext](https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(23)00235-8/fulltext) 
   - **Data:** https://zenodo.org/records/7884640
-- **Title:** _tl\_2019\_us\_county.zip_ 
+- **Title:** _tl\_2019\_us\_county.zip_  <span style='color:#9c27b0'>\(not uploaded\)</span>
   - **Description:** Derived from the U.S. Census Bureau on 11/30/2025, this dataset contains each of the U.S. county boundaries in shapefile format. 
   - **Data:** [https://www.census.gov/cgi\-bin/geo/shapefiles/index.php](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) 
-- **Title:** _State\_FIPS.csv_
+- **Title:** _State\_FIPS.csv_ <span style='color:#9c27b0'>\(not uploaded\)</span>
   - **Description:** Derived from the Federal Information Processing System \(FIPS\) Codes for States and Counties on 11/30/2025, this dataset contains each of the U.S. county and state's FIPS codes. FIPS codes are numbers which uniquely identify geographic areas.  The number of digits in FIPS codes vary depending on the level of geography.  State\-level FIPS codes have two digits, county\-level FIPS codes have five digits of which the first two are the FIPS code of the state to which the county belongs.
   - **Data:** https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt
 
@@ -64,19 +64,9 @@ This analysis followed these six steps:
 
 ## File Organization
 
-- `scripts/` \- GitHub control and useful code references \(not uploaded to GitHub\)
-- `data/` \- Project folder \(uploaded to GitHub, sans raw\_data\)
-  - `raw_data/` \- Original files
-    - `air_monitors/` \- daily\_88101\_2019.csv
-    - `alternative_PM25_data/` \- USHAP\_PM2.5\_D1K\_2019\_V1.zip
-    - `census/` \- tl\_2019\_us\_county.zip 
-    - `FCC/` \- State\_FIPS.csv
-  - `processed_data/` \- Cleaned intermediate files and final analysis results
-    - `air_monitors/` \- Intermediate data predominately relating to the air monitor dataset
-    - `alternative_PM25_data/` \- Intermediate data predominately relating to the modeled PM2.5 dataset
-    - `final_output/` \- Final data supporting findings in final report
-    - `intermediate_scratch/` \- Intermediate datasets used within notebooks to obtain a final dataset at the end of those notebooks. This folder was used to bookmark analysis progress to avoid CoCalc timeout issues.
-  - `analysis/` \- R scripts
+- `scripts/` \- GitHub control and useful code references <span style='color:#9c27b0'>\(not uploaded\)</span>
+- `data/` \- Project folder
+  - `A_analysis/` \- R scripts
     - `air_monitors/`
       - `A_air_monitors/` \- R script in a Jupyter Notebook used to explore and clean EPA's 2019 AQS dataset
       - `B_air_monitors_w_alt_data/` \- R script in a Jupyter Notebook used to combine the alternative air quality dataset with the cleaned EPA 2019 AQS dataset
@@ -85,20 +75,30 @@ This analysis followed these six steps:
       - `F_air_monitors_altvalue-median_altvalue_comparison` \- R scripts in a Jupyter Notebook used to compare PM2.5 values at the monitor to PM2.5 county medians
     - `alternative_PM25_data/`
       - `D_alt_data_county_typical_daily_PM25_analysis` \- R script in a Jupyter Notebook used to clean and calculate the median alternative PM2.5 data in every contiguous U.S. county for every day in 2019
-  - `metadata/` \- Data documentation
+  - `B_metadata/` \- Data documentation
     - `monitor_value_vs_county_value_metadata/` \- R markdown documenting the monitor value versus county value dataset, which is a final output of this project
-  - `outputs/` \- Figures and reports
-  - `archive/` \- Legacy Data
+  - `C_raw_data/` \- Original files
+    - `air_monitors/` \- daily\_88101\_2019.csv  <span style='color:#9c27b0'>\(not uploaded\)</span>
+    - `alternative_PM25_data/` \- USHAP\_PM2.5\_D1K\_2019\_V1.zip  <span style='color:#9c27b0'>\(not uploaded\)</span>
+    - `census/` \- tl\_2019\_us\_county.zip  <span style='color:#9c27b0'>\(not uploaded\)</span>
+    - `FCC/` \- State\_FIPS.csv  <span style='color:#9c27b0'>\(not uploaded\)</span>
+  - `D_processed_data/` \- Cleaned intermediate files and final analysis results
+    - `air_monitors/` \- Intermediate data predominately relating to the air monitor dataset   <span style='color:#9c27b0'>\(not uploaded\)</span>
+    - `alternative_PM25_data/` \- Intermediate data predominately relating to the modeled PM2.5 dataset  <span style='color:#9c27b0'>\(not uploaded\)</span>
+    - `final_output/` \- Final data supporting findings in final report
+    - `intermediate_scratch/` \- Intermediate datasets used within notebooks to obtain a final dataset at the end of those notebooks. This folder was used to bookmark analysis progress to avoid CoCalc timeout issues.   <span style='color:#9c27b0'>\(not uploaded\)</span>
+  - `E_outputs/` \- Figures and reports
+  - `F_archive/` \- Legacy Data
 - `yale_capstone_public/` \- GitHub repository
 
 ## Requirements
 
-- R
-- Packages: dplyr, tidyr, readr, vroom, ggplot2, stringr, terra, naniar, tidyterra,   exactextractr, sf, lubridate, ggtext
+- R  
+  _Packages: dplyr, tidyr, readr, vroom, ggplot2, stringr, terra, naniar, tidyterra,   exactextractr, sf, lubridate, ggtext_
 
 ## Contact
 
-Seth Gerhart - TBD@email.com
+Seth M. Gerhart - TBD@email.com
 
 ## License
 
