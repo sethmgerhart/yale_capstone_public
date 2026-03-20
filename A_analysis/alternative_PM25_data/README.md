@@ -23,8 +23,8 @@ _Note: Five other intermediary analyses are in the air\_monitors folder because 
 
 ## Requirements
 
-- R
-- Packages: dplyr, tidyr, readr, vroom, ggplot2, stringr, terra, naniar, tidyterra,   exactextractr, sf, lubridate
+- R  
+  _Packages: dplyr, tidyr, readr, vroom, ggplot2, stringr, terra, naniar, tidyterra,   exactextractr, sf, lubridate, ggtext_
 
 ## Contact
 

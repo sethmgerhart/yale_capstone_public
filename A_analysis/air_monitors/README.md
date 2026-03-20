@@ -31,8 +31,8 @@ _Note: A sixth intermediary analysis is in the alternative\_PM25\_data folder be
 
 ## Requirements
 
-- R
-- Packages: dplyr, tidyr, readr, vroom, ggplot2, stringr, terra, naniar, tidyterra,   exactextractr, sf, lubridate, ggtext
+- R  
+  _Packages: dplyr, tidyr, readr, vroom, ggplot2, stringr, terra, naniar, tidyterra,   exactextractr, sf, lubridate, ggtext_
 
 ## Contact
 
