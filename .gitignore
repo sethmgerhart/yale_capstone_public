@@ -9,3 +9,7 @@ alternative_PM25_data_processed_v01.csv
 daily_88101_2019_processed_v01.csv
 alternative_PM25_data_processed_v01.csv
 alternative_PM25_data_processed_v02.csv
+A_data/C_raw_data/census/
+A_data/C_raw_data/census/*
+D_processed_data/intermediate_scratch/*
+D_processed_data/intermediate_scratch/
