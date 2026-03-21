@@ -38,7 +38,7 @@ This analysis used the following raw data:
 - **Title:** _tl\_2019\_us\_county.zip_  <span style='color:#9c27b0'>\(not uploaded\)</span>
   - **Description:** Derived from the U.S. Census Bureau on 11/30/2025, this dataset contains each of the U.S. county boundaries in shapefile format. 
   - **Data:** [https://www.census.gov/cgi\-bin/geo/shapefiles/index.php](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) 
-- **Title:** _State\_FIPS.csv_ <span style='color:#9c27b0'>\(not uploaded\)</span>
+- **Title:** _State\_FIPS.csv_ 
   - **Description:** Derived from the Federal Information Processing System \(FIPS\) Codes for States and Counties on 11/30/2025, this dataset contains each of the U.S. county and state's FIPS codes. FIPS codes are numbers which uniquely identify geographic areas.  The number of digits in FIPS codes vary depending on the level of geography.  State\-level FIPS codes have two digits, county\-level FIPS codes have five digits of which the first two are the FIPS code of the state to which the county belongs.
   - **Data:** https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt
 
